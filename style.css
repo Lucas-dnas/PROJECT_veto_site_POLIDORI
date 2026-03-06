@@ -157,7 +157,7 @@ span {
 }
 
 .hero {
-    max-width: 25rem;
+    max-width: 45rem;
     width: 100%;
     text-align: center;
     background-color: var(--light-blue);
