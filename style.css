@@ -356,7 +356,7 @@ footer {
     }
 
     main {
-        padding: 6rem;
+        padding: 4rem;
     }
 
     section {
@@ -387,6 +387,13 @@ footer {
     .hero {
         max-width: 100%;
         width: 80%;
+    }
+
+    .history-content {
+        p {
+            padding-top: 2rem;
+            font-size: small;
+        }
     }
 
     .landing-screen a {
@@ -421,7 +428,7 @@ footer {
     }
 
     main {
-        padding: 4rem;
+        padding: 2.4rem;
     }
 
     section {
