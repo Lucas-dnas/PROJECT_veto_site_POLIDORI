@@ -60,12 +60,12 @@ nav {
 }
 
 main {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-inline: 9.6rem;
+    padding: 9.6rem;
 }
 
 p,
@@ -98,35 +98,6 @@ span {
     font-weight: bold;
 }
 
-/*
-// header {
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: center;
-// 	color: $blue_dark;
-// 	width: 100%;
-
-// 	div {
-// 		display: flex;
-// 		flex-direction: column;
-// 		align-items: center;
-// 		font-size: xx-large;
-// 		font-weight: bold;
-
-// 		@include respond(tablet) {
-// 			font-size: large;
-// 			max-width: 100%;
-// 		}
-
-// 		@include respond(mobile) {
-// 			font-size: x-small;
-// 			max-width: 100%;
-// 		}
-
-// 	}
-// }
-*/
-
 .phone {
     width: 100%;
     display: flex;
@@ -158,7 +129,7 @@ span {
 }
 
 .hero {
-    max-width: 45rem;
+    max-width: 50rem;
     width: 100%;
     text-align: center;
     background-color: var(--light-blue);
@@ -169,6 +140,10 @@ span {
     padding-left: 3rem;
     border-radius: 50px;
     margin-top: 5rem;
+
+    p {
+        padding: 4px 4px;
+    }
 }
 
 .landing-screen {
@@ -208,14 +183,14 @@ span {
 
 /* pas fait reponsive */
 .advices {
-    max-width: 70%;
+    width: 100%;;
 
     .advices-section {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-left: 80px;
+        padding-left: 5rem;
         width: 100%;
 
         @media screen and (width<1024px) {
@@ -276,7 +251,7 @@ span {
 .history {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
 }
 
 .history-content {
@@ -286,7 +261,7 @@ span {
 }
 
 .values {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -314,9 +289,10 @@ span {
 .map {
     display: flex;
     flex-direction: column;
-    max-width: 1920px;
-    max-height: 800px;
-    width: 80%;
+    align-self: center;
+    max-width: 1500px;
+    max-height: 700px;
+    width: 100%;
     height: 100%;
 }
 
@@ -360,6 +336,9 @@ footer {
         width: 100%;
     }
 
+    main {
+        padding: 6rem;
+    }
     section {
         padding-top: 6%;
         padding-bottom: 4%;
@@ -393,6 +372,14 @@ footer {
     .landing-screen a {
         font-size: x-small;
     }
+
+    iframe {
+        max-width: 850px;
+        max-height: 400px;
+        align-self: center;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
@@ -402,7 +389,9 @@ footer {
         max-width: 768px;
         width: 100%;
     }
-
+    main {
+        padding: 4rem;
+    }
     section {
         padding-top: 6%;
         padding-bottom: 4%;
@@ -444,13 +433,14 @@ footer {
     }
 
     .map {
-        width: 100%;
+        width: 80%;
     }
 
     iframe {
-        max-width: 450px;
-        max-height: 768px;
-        width: 100%;
+        max-width: 768px;
+        max-height: 450px;
+        align-self: center;
+        width: 80%;
         height: 100%;
     }
 }
