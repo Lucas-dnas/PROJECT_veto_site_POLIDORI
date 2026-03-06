@@ -16,7 +16,6 @@
     font-size: 62.5%;
 }
 
-
 html {
     margin: 0;
     padding: 0;
@@ -47,7 +46,7 @@ body {
             padding-top: 6%;
             padding-bottom: 4%;
         }
-        
+
         @media screen and (width<768px) {
             padding-top: 6%;
             padding-bottom: 4%;
@@ -56,6 +55,60 @@ body {
     }
 
     @media screen and (width<1024px) {}
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: var(--mid-blue);
+    font-weight: 700;
+    font-size: clamp(3.2rem, 1.6rem + 3.3333vw, 5.6rem);
+}
+
+h2 {
+    text-align: left;
+    font-size: 3.2rem;
+    color: var(--dark-blue);
+}
+
+h3 {
+    text-align: center;
+}
+
+h4{
+
+}
+
+.body1{
+
+}
+
+.body2{
+
+}
+
+.body3{
+    
+}
+
+li {
+    font-size: large;
+    color: var(--mid-blue);
+
+    @media screen and (width<1024px) {
+        font-size: x-small;
+    }
+
+    @media screen and(width<768px) {
+        font-size: small;
+    }
 }
 
 .desktop-nav {
@@ -81,55 +134,7 @@ body {
     display: none;
 }
 
-main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-p,
-li {
-    font-size: large;
-    color: var(--mid-blue);
-
-    @media screen and (width<1024px) {
-        font-size: x-small;
-    }
-
-    @media screen and(width<768px) {
-        font-size: small;
-    }
-}
-
-h1 {
-    text-align: center;
-    color: var(--mid-blue);
-    font-weight: 700;
-    font-size: clamp(3.2rem, 1.6rem + 3.3333vw, 5.6rem);
-}
-
-h2 {
-    text-align: left;
-    color: var(--dark-blue);
-    font-size: 3.2rem;
-
-    @media screen and (width<1024px) {
-        font-size: large;
-        padding-bottom: 5%;
-
-    }
-
-    @media screen and(width<768px) {
-        font-size: small;
-        padding-bottom: 5%;
-    }
-}
-
-h3 {
-    text-align: center;
-}
 
 span {
     text-align: center;
@@ -146,35 +151,6 @@ span {
 
     }
 }
-
-/*
-// header {
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: center;
-// 	color: $blue_dark;
-// 	width: 100%;
-
-// 	div {
-// 		display: flex;
-// 		flex-direction: column;
-// 		align-items: center;
-// 		font-size: xx-large;
-// 		font-weight: bold;
-
-// 		@include respond(tablet) {
-// 			font-size: large;
-// 			max-width: 100%;
-// 		}
-
-// 		@include respond(mobile) {
-// 			font-size: x-small;
-// 			max-width: 100%;
-// 		}
-
-// 	}
-// }
-*/
 
 .phone {
     width: 100%;
@@ -282,24 +258,6 @@ span {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* advices not done yet, finish it before thuesday evening */
 .advices {
     max-width: 70%;
 
@@ -315,11 +273,6 @@ span {
             flex-direction: column;
             /* // justify-content: ; */
             width: 100%;
-        }
-
-        h4 {
-            align-self: flex-start;
-            font-size: large;
         }
 
         .not-doing {
@@ -359,13 +312,6 @@ span {
     }
 }
 
-/* // advices not done yet, finish it before thuesday evening */
-
-
-
-
-
-
 .history {
     display: flex;
     flex-direction: column;
@@ -383,7 +329,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-bottom: 3rem    ;
+    padding-bottom: 3rem;
 }
 
 .values-grid {
@@ -463,4 +409,49 @@ footer {
         width: 1rem;
     }
 
+}
+
+@media screen and (width<1024px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+    
+    .mobile-nav i {
+        color: var(--dark-blue);
+        position: fixed;
+        top: 1.2rem;
+        right: 2.4rem;
+        font-size: 3rem;
+        z-index: 99;
+    }
+
+    .modal {
+        position: fixed;
+        transition: top 1s;
+        background-color: var(--light-blue);
+        opacity: 0.9;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        top: -100vh;
+    }
+
+    .change-modal{
+        top: 0;
+    }
+
+    .mobile-nav-list {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
 }
