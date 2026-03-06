@@ -1,5 +1,3 @@
-@import "./variables";
-@import "./mixins";
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
 :root {
@@ -60,15 +58,12 @@ body {
     @media screen and (width<1024px) {}
 }
 
-nav {
+.desktop-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     background-color: var(--light-blue);
-    /* margin-bottom: 5rem;
-    width: 100%;
-    height: 5rem; */
 
     a {
         color: var(--mid-blue);
@@ -80,6 +75,10 @@ nav {
     a:hover {
         color: var(--dark-blue);
     }
+}
+
+.mobile-nav {
+    display: none;
 }
 
 main {
