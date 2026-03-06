@@ -10,10 +10,18 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="desktop-nav">
             <a href="#map">Où nous trouver</a>
             <a href="#history">Notre Histoire</a>
             <a href="#values">Nos Valeurs</a>
+        </nav>
+        <nav class="mobile-nav">
+            <i class="fas fa-bars"></i>
+            <div class="modal">
+                <a href="#map">Où nous trouver</a>
+                <a href="#history">Notre Histoire</a>
+                <a href="#values">Nos Valeurs</a>
+            </div>
         </nav>
     </header>
 
@@ -30,7 +38,7 @@
                 <p> Un seul vétérinaire,</p>
                 <p>du conseil téléphonique à la consultation.</p>
             </div>
-            <h2>Mulhouse Colmar Belfort</h2>
+            <h3>Mulhouse Colmar Belfort</h3>
             <p>Ouvert du Samedi 8h</p>
             <p>au Lundi 8h</p>
             <a href="#map">212 Rue de Reiningue,<br>68310 Wittelsheim</a>
@@ -89,7 +97,7 @@
 
         <!-- repasser sur map, c'est pas au centre et le titre est mal placé -->
         <section class="map" id="map">
-            <h2>Nous retrouver</h2>
+            <h3>Nous retrouver</h3>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2680.9722212320335!2d7.221112775554269!3d47.78198667585095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479183f18a569189%3A0xb711872eedfe7524!2sClinique%20V%C3%A9t%C3%A9rinaire%20Du%20Dr%20Polidori!5e0!3m2!1sfr!2sfr!4v1768668877187!5m2!1sfr!2sfr"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -97,7 +105,7 @@
         </section>
 
         <section class="history" id="history">
-            <h2>Notre Histoire</h2>
+            <h3>Notre Histoire</h3>
             <div class="history-content">
                 <p>
                     J’ai débuté ma carrière en 1991 en assurant l’ensemble des gardes de nuit et de week-end au sein de
@@ -120,7 +128,7 @@
             </div>
         </section>
         <section class="values" id="values">
-            <h2>Nos Valeurs</h2>
+            <h3>Nos Valeurs</h3>
             <div class="values-grid">
                 <div class="values-content">
                     <img src="./assets/horse.webp"
