@@ -98,7 +98,24 @@ h2 {
     display: none;
 }
 
+.desktop-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--light-blue);
 
+    a {
+        color: var(--mid-blue);
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    a:hover {
+        color: var(--dark-blue);
+    }
+}
 
 span {
     text-align: center;
