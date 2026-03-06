@@ -84,6 +84,7 @@ h2 {
     text-align: left;
     color: var(--dark-blue);
     font-size: 3.2rem;
+    padding-bottom: 9%;
 }
 
 h3 {
@@ -156,7 +157,7 @@ span {
 }
 
 .hero {
-    max-width: 25rem;
+    max-width: 50rem;
     width: 100%;
     text-align: center;
     background-color: var(--light-blue);
@@ -167,6 +168,10 @@ span {
     padding-left: 3rem;
     border-radius: 50px;
     margin-top: 5rem;
+
+    p {
+        padding: 4px 4px;
+    }
 }
 
 .landing-screen {
@@ -312,6 +317,7 @@ span {
 .map {
     display: flex;
     flex-direction: column;
+    align-self: center;
     max-width: 1920px;
     max-height: 800px;
     width: 80%;
@@ -442,13 +448,14 @@ footer {
     }
 
     .map {
-        width: 100%;
+        width: 80%;
     }
 
     iframe {
         max-width: 450px;
         max-height: 768px;
-        width: 100%;
+        align-self: center;
+        width: 70%;
         height: 100%;
     }
 }
