@@ -30,33 +30,34 @@ body {
 	background-repeat: no-repeat;
 	background-image: none; */
     section {
-        padding-top: 64px;
-        padding-bottom: 3rem;
+        padding-top: 6.4rem;
+        padding-bottom: 3.2rem;
     }
 
 
 }
 
-nav {
+.desktop-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     background-color: var(--light-blue);
-    /* margin-bottom: 5rem;
-    width: 100%;
-    height: 5rem; */
+}
 
-    a {
-        color: var(--mid-blue);
-        text-decoration: none;
-        font-size: 2rem;
-        font-weight: 300;
-    }
+a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+}
 
-    a:hover {
-        color: var(--dark-blue);
-    }
+a:hover {
+    color: var(--mid-blue);
+}
+
+.mobile-nav {
+    display: none;
 }
 
 main {
@@ -78,18 +79,40 @@ h1 {
     text-align: center;
     color: var(--mid-blue);
     font-weight: 700;
-    font-size: clamp(3.2rem, 1.6rem + 3.3333vw, 5.6rem);
+    font-size: clamp(3.2rem, 1.6rem + 3.3333vw, 4rem);
 }
 
 h2 {
     text-align: left;
     color: var(--dark-blue);
     font-size: 3.2rem;
-    padding-bottom: 8%;
+    font-weight: 700;
 }
 
 h3 {
-    text-align: center;
+    text-align: left;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.body1 {
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.body2 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.body3 {
+    font-weight: 100;
+    font-size: 1.6rem;
 }
 
 span {
@@ -130,6 +153,11 @@ span {
     border-radius: 50px;
     font-size: 4rem;
     padding: 1.6rem;
+}
+
+.phone-number:hover {
+    background-color: var(--dark-red);
+    color: var(--white);
 }
 
 .hero {
@@ -205,11 +233,6 @@ span {
             flex-direction: column;
             /* justify-content: ; */
             width: 100%;
-        }
-
-        h4 {
-            align-self: flex-start;
-            font-size: large;
         }
 
         .not-doing {

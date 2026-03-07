@@ -4,16 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Homepage</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="desktop-nav">
             <a href="#map">Où nous trouver</a>
             <a href="#history">Notre Histoire</a>
             <a href="#values">Nos Valeurs</a>
+        </nav>
+        <nav class="mobile-nav">
+            <i class="fas fa-bars"></i>
+            <div class="modal">
+                <div class="mobile-nav-list">
+                    <a href="#map">Où nous trouver</a>
+                    <a href="#history">Notre Histoire</a>
+                    <a href="#values">Nos Valeurs</a>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -27,8 +39,7 @@
 
         <section class="landing-screen">
             <div class="hero">
-                <p> Un seul vétérinaire,</p>
-                <p>du conseil téléphonique à la consultation.</p>
+                <h4> Un seul vétérinaire,<br>du conseil téléphonique à la consultation.</h4>
             </div>
             <h2>Mulhouse Colmar Belfort</h2>
             <p>Ouvert du Samedi 8h</p>
@@ -45,7 +56,7 @@
         <section class="advices">
             <div class="advices-content">
                 <h4>Quand faut-il s’inquiéter?</h4>
-                <p>
+                <p class="body-1">
                     Certaines urgences sautent aux yeux, mais beaucoup d’autres sont plus subtiles.
                     Apprenez à identifier les signaux et à connaître les bons réflexes au bon moment.
                     Vous avez une question ou un doute ? Contactez-nous sans hésiter. Nous préférons une vérification
@@ -57,9 +68,9 @@
                 <div class="not-doing">
                     <h4>Ce qu’il ne faut pas faire: </h4>
                     <ul>
-                        <li>Chercher des infos sur internet</li>
-                        <li>Attendre pour voir « si ça va mieux »</li>
-                        <li>Donner un médicament humain</li>
+                        <li class="body-1">Chercher des infos sur internet</li>
+                        <li class="body-1">Attendre pour voir « si ça va mieux »</li>
+                        <li class="body-1">Donner un médicament humain</li>
                     </ul>
                     <img class="img-alerts-signs" src="./assets/warning.webp"
                         alt="Icon octogonal avec un point d'exclamation au centre">
@@ -69,10 +80,10 @@
                         alt="Icon d'un support à papier avec une croix au centre">
                     <h4>Quels sont les signes d’alertes les plus fréquemment rencontrés: </h4>
                     <ul>
-                        <li>Temperature élevée</li>
-                        <li>Convulsions</li>
-                        <li>Fatigue , apathie</li>
-                        <li>Tout comportement anormal</li>
+                        <li class="body-1">Temperature élevée</li>
+                        <li class="body-1">Convulsions</li>
+                        <li class="body-1">Fatigue , apathie</li>
+                        <li class="body-1">Tout comportement anormal</li>
                     </ul>
                 </div>
             </div>
@@ -80,7 +91,7 @@
 
         <!-- repasser sur map, c'est pas au centre et le titre est mal placé -->
         <section class="map" id="map">
-            <h2>Nous retrouver</h2>
+            <h3>Nous retrouver</h3>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2680.9722212320335!2d7.221112775554269!3d47.78198667585095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479183f18a569189%3A0xb711872eedfe7524!2sClinique%20V%C3%A9t%C3%A9rinaire%20Du%20Dr%20Polidori!5e0!3m2!1sfr!2sfr!4v1768668877187!5m2!1sfr!2sfr"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -88,22 +99,22 @@
         </section>
 
         <section class="history" id="history">
-            <h2>Notre Histoire</h2>
+            <h3>Notre Histoire</h3>
             <div class="history-content">
-                <p>
+                <p class="body-1">
                     J’ai débuté ma carrière en 1991 en assurant l’ensemble des gardes de nuit et de week-end au sein de
                     l’une des deux plus grandes cliniques de Nantes.
                 </p>
-                <p>
+                <p class="body-1">
                     En 2005, j’ai fondé le service de garde Mulhouse Sud Alsace, réunissant les gardes de dix cliniques
                     différentes au sein d’une structure unique et coordonnée.
                 </p>
-                <p>
+                <p class="body-1">
                     En 1996, j'ai créé la Clinique Veterinaire des Accacias, à Wittelsheim, dans laquelle je propose
                     aujourd’hui une nouvelle organisation afin de répondre encore mieux aux attentes et besoins
                     de mes clients.
                 </p>
-                <p>
+                <p class="body-1">
                     Fort de mon expérience, j’ai choisi de ne pas recourir à une plateforme de régulation, souvent
                     source d’inconfort et parfois d’erreurs. Je privilégie au contraire une relation directe et de
                     proximité, gage de confiance et de sérénité pour mes clients.
@@ -111,12 +122,12 @@
             </div>
         </section>
         <section class="values" id="values">
-            <h2>Nos Valeurs</h2>
+            <h3>Nos Valeurs</h3>
             <div class="values-grid">
                 <div class="values-content">
                     <img src="./assets/horse.webp"
                         alt="Portrait d'un cheval bai avec une tâche blanche sur le chanfrein, sous le soleil">
-                    <p>
+                    <p class="body-1">
                         Notre mission est simple : offrir une réponse efficace à l’urgence, dans un environnement à
                         taille
                         humaine où la qualité des soins et le respect du patient sont au cœur de nos priorités.
@@ -125,7 +136,7 @@
                 <div class="values-content">
                     <img src="./assets/owl-portrait.webp"
                         alt="Hibou perché sur un arbre au milieu de la nuit, il nous tourne le dos mais regarde dans notre direction">
-                    <p>
+                    <p class="body-1">
                         Spécialisée dans les soins d’urgence, la clinique met à disposition une structure médicale 
                         hautement qualifiée, disponible 24h/24 du samedi 10h au lundi matin 8h, pour répondre à toutes
                         les
@@ -134,7 +145,7 @@
                 </div>
                 <div class="values-content">
                     <img src="./assets/dogo.webp" alt="Chien en clinique vétérinaire, tenu pendant un examen médical">
-                    <p>
+                    <p class="body-1">
                         Grâce à des plateaux techniques modernes, un accès facilité depuis les grands axes routiers et
                         une
                         organisation optimisée des parcours de soins, nous garantissons à chaque patient une prise en
