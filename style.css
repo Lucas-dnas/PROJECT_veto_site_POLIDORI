@@ -75,6 +75,9 @@ li {
     color: var(--mid-blue);
 }
 
+ul {
+    margin-left: 4rem;
+}
 h1 {
     text-align: center;
     color: var(--mid-blue);
