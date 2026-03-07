@@ -472,7 +472,7 @@ footer {
             display: flex;
             /* grid-template-columns: repeat(1, 1fr); */
             flex-direction: column;
-            gap: 2.8rem;
+            gap: 2.4rem;
 
             h4 {
                 font-size: large;
@@ -487,22 +487,15 @@ footer {
             div {
                 display: flex;
                 flex-direction: column;
-                gap: 2.4rem;
+                /* gap: 2.4rem; */
                 align-items: center;
                 justify-content: center;
                 /* height: 15%; */
                 /* padding-top: 5rem; */
             }
 
-            .img-alerts-signs {
-                /* width: 10vw; */
+            .img-alerts-signs, .img-not-doing {
                 visibility: hidden;
-            }
-            
-            .img-not-doing {
-                visibility: hidden;
-                /* width: 10vw; */
-
             }
         }
 
