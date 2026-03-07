@@ -25,16 +25,14 @@ html {
 }
 
 body {
-    /* background-size: contain;
-	background-image: url(../assets/double-square-cross.webp);
-	background-repeat: no-repeat;
-	background-image: none; */
     section {
         padding-top: 6.4rem;
         padding-bottom: 3.2rem;
     }
+}
 
-
+.mobile-nav {
+    display: none;
 }
 
 .desktop-nav {
@@ -83,6 +81,7 @@ h1 {
     color: var(--mid-blue);
     font-weight: 700;
     font-size: clamp(3.2rem, 1.6rem + 3.3333vw, 4rem);
+    margin-bottom: 1rem;
 }
 
 h2 {
@@ -90,17 +89,20 @@ h2 {
     color: var(--dark-blue);
     font-size: 3.2rem;
     font-weight: 700;
+    margin-bottom: 2.4rem;
 }
 
 h3 {
     text-align: left;
     font-size: 2.8rem;
     font-weight: 600;
+    margin-bottom: 6.8rem;
 }
 
 h4 {
     font-size: 2.4rem;
     font-weight: 600;
+    margin-bottom: 3.2rem;
 }
 
 .body1 {
@@ -118,14 +120,14 @@ h4 {
     font-size: 1.6rem;
 }
 
-span {
-    text-align: center;
-    font-size: x-large;
-    font-weight: bold;
-}
-
-.phone {
-    width: 100%;
+.landing-screen {
+    align-self: center;
+    position: relative;
+    background-image: url(assets/hero-picture.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 75vh;
     display: flex;
     flex-direction: column;
 
@@ -144,18 +146,16 @@ span {
 }
 
 .phone-number {
+    position: absolute;
     background-color: var(--red);
     color: var(--white);
-    align-self: center;
-    max-width: 35rem;
-    max-height: 5rem;
-    width: 100%;
-    height: 100%;
     text-align: center;
-    justify-content: center;
     border-radius: 50px;
     font-size: 4rem;
-    padding: 1.6rem;
+    padding: 1.6rem 4rem;
+    font-weight: 500;
+    top: 50%;
+    left: 37.5%;
 }
 
 .phone-number:hover {
@@ -164,26 +164,23 @@ span {
 }
 
 .hero {
+    position: absolute;
     max-width: 50rem;
     width: 100%;
+    /* margin-inline: 30vw; */
     text-align: center;
     background-color: var(--light-blue);
-    color: var(--dark-blue);
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
     border-radius: 50px;
-    margin-top: 5rem;
+    padding: 1.2rem;
+    bottom: -3.4rem;
+    left: 32.5vw;
 
     p {
-        padding: 4px 4px;
+        color: var(--dark-blue);
     }
 }
 
-.landing-screen {
-    background-image: src('assets/hero-picture.webp');
-    background-size: cover;
+.hero-section {
     /* height: 100vh; */
     width: 100%;
     display: flex;
@@ -191,18 +188,16 @@ span {
     align-items: center;
     padding-top: 64px;
 
-    img {
-        width: 100%;
-
-    }
-
-    p {
+    h1,
+    h2,
+    h3,
+    p,
+    a {
         color: var(--mid-blue);
     }
 
     a {
         padding-top: 8px;
-        color: var(--mid-blue);
         font-size: large;
         text-align: center;
 
@@ -217,71 +212,75 @@ span {
 }
 
 
-/* advices not done yet, finish it before thuesday evening */
-
-/* pas fait reponsive */
 .advices {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    ;
+    gap: 8rem;
+
+    .advices-content {
+        h4 {
+            font-size: large;
+        }
+
+        p {
+            padding-left: 6.4rem;
+        }
+
+    }
 
     .advices-section {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 5rem;
-        width: 100%;
+        flex-direction: column;
+        gap: 8rem;
 
-        @media screen and (width<1024px) {
-            flex-direction: column;
-            /* justify-content: ; */
-            width: 100%;
+        h4 {
+            font-size: large;
+            align-self: flex-start;
         }
 
-        .not-doing {
-            padding-top: 80px;
+        ul {
+            padding-left: 4rem;
+            align-self: start;
+        }
 
+        .advices-div {
+            display: flex;
+            margin-inline: 6.4rem;
+            width: 75vw;
+            gap: 2.4rem;
+            align-items: center;
+            justify-content: space-between;
 
-            @media screen and (width<768px) {
-                padding-top: 8%;
+            .advices-item {
+                flex-direction: column;
             }
         }
 
-        .img-alerts-signs {
-            width: 30%;
-            height: 35%;
-            object-fit: contain;
-            padding-left: 6rem;
-            padding-top: 5rem;
-        }
-
-        .alerts-signs {
-            padding-top: 3rem;
-
-            @media screen and (width<768px) {
-                padding-top: 8%;
+        .advices-div:nth-child(1) {
+            img {
+                margin-right: 8rem;
             }
-
         }
 
+        .advices-div:nth-child(2) {
+            flex-direction: row-reverse;
+
+            img {
+                margin-left: 8rem;
+            }
+        }
+
+        .img-alerts-signs,
         .img-not-doing {
-            padding-top: 3rem;
-            padding-bottom: 2rem;
-            padding-left: 5rem;
-            width: 30%;
-            height: 40%;
-            object-fit: contain;
+            width: 10vw;
         }
     }
+
 }
 
-/* // advices not done yet, finish it before thuesday evening */
 
-
-
-
-
-
+/* HISTORY SECTION */
 .history {
     display: flex;
     flex-direction: column;
@@ -359,7 +358,7 @@ footer {
         font-size: 1.2rem;
     }
 
-    .footer-1{
+    .footer-1 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -385,10 +384,51 @@ footer {
     }
 }
 
-
 /* @media tablet*/
-
 @media screen and (width<1024px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    .mobile-nav i {
+        color: var(--dark-blue);
+        position: fixed;
+        top: 1.2rem;
+        right: 2.4rem;
+        font-size: 3rem;
+        z-index: 100;
+    }
+
+    .modal {
+        position: fixed;
+        transition: top 1s;
+        background-color: var(--light-blue);
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+        top: -100vh;
+        left: 0;
+    }
+
+    .change-modal {
+        top: 0;
+    }
+
+    .mobile-nav-list {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+
     html {
         max-width: 1024px;
         width: 100%;
@@ -423,11 +463,6 @@ footer {
         padding: 1.2rem;
     }
 
-    .hero {
-        max-width: 100%;
-        width: 80%;
-    }
-
     .history-content {
         p {
             padding-top: 2rem;
@@ -437,6 +472,51 @@ footer {
 
     .landing-screen a {
         font-size: x-small;
+    }
+
+    .advices {
+        width: 100%;
+
+        .advices-content {
+            h4 {
+                font-size: large;
+            }
+
+            p {
+                padding-left: 3rem;
+            }
+
+        }
+
+        .advices-section {
+            display: flex;
+            /* grid-template-columns: repeat(1, 1fr); */
+            flex-direction: column;
+            gap: 2.4rem;
+
+            h4 {
+                font-size: large;
+                align-self: flex-start;
+            }
+
+            ul {
+                padding-left: 4rem;
+                align-self: start;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .img-alerts-signs,
+            .img-not-doing {
+                visibility: hidden;
+            }
+        }
+
     }
 
     iframe {
@@ -478,11 +558,10 @@ footer {
     p,
     li {
         font-size: small;
-
     }
 
     h2 {
-        font-size: x-small;
+        font-size: large;
         padding-bottom: 5%;
     }
 
@@ -511,7 +590,7 @@ footer {
     }
 
     .map {
-        width: 80%;
+        width: 100%;
     }
 
     iframe {
@@ -529,6 +608,12 @@ footer {
 
 /* @media less 500px */
 @media screen and (width<500px) {
+    .hero-section {
+        a {
+            text-decoration: underline;
+        }
+    }
+
     .values-content {
         grid-template-columns: 1fr;
         padding-inline: 5rem;
