@@ -1,5 +1,3 @@
-@import "./variables";
-@import "./mixins";
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
 :root {
@@ -31,11 +29,12 @@ body {
 	background-image: url(../assets/double-square-cross.webp);
 	background-repeat: no-repeat;
 	background-image: none; */
-
     section {
         padding-top: 64px;
         padding-bottom: 3rem;
     }
+
+
 }
 
 nav {
@@ -64,9 +63,9 @@ main {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
-    padding: 9.6rem;
+    padding-inline: 9.6rem;
 }
 
 p,
@@ -322,7 +321,7 @@ footer {
     /* font-size: large; */
     height: 20vh;
 
-    .footer-left{
+    .footer-left {
         display: flex;
     }
 
@@ -343,7 +342,7 @@ footer {
     }
 
     main {
-        padding: 4rem;
+        padding-inline: 4rem;
     }
 
     section {
@@ -415,7 +414,7 @@ footer {
     }
 
     main {
-        padding: 2.4rem;
+        padding-inline: 2.4rem;
     }
 
     section {
