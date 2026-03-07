@@ -51,6 +51,18 @@ body {
     background-color: var(--light-blue);
 }
 
+.btn-nav {
+    z-index: 99;
+    position: fixed;
+    top: 6.8rem;
+    right: 9.6rem;
+    width: fit-content;
+    padding: 2.4rem 3.2rem;
+    border: none;
+    border-radius: 1.6rem;
+    background-color: var(--light-blue);
+}
+
 a {
     color: var(--dark-blue);
     text-decoration: none;
@@ -73,6 +85,7 @@ main {
     align-items: left;
     justify-content: center;
     padding-inline: 9.6rem;
+    padding-bottom: 8rem;
 }
 
 p,
@@ -154,7 +167,7 @@ h4 {
         background-color: var(--dark-red);
     }
 
-    p{
+    p {
         color: var(--dark-blue);
     }
 }
@@ -321,7 +334,6 @@ h4 {
     grid-template-columns: repeat(3, 1fr);
     gap: 8rem;
     padding-inline: 6.8rem;
-    padding-bottom: 8rem;
 
     .values-content {
         display: flex;
