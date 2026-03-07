@@ -315,28 +315,15 @@ iframe {
 
 footer {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--light-blue);
-    font-size: large;
+    color: var(--dark-blue);
+    /* font-size: large; */
     height: 20vh;
 
-    p {
-        color: var(--dark-blue);
-    }
-
-    a {
-        color: var(--dark-blue);
-        font-size: large;
-    }
-
-    a:hover {
-        color: var(--mid-blue);
-    }
-
-    li {
-        color: var(--mid-blue);
+    .footer-left{
+        display: flex;
     }
 
     img {
@@ -484,13 +471,7 @@ footer {
     }
 
     footer {
-        p {
-            font-size: x-small;
-        }
-
-        a {
-            font-size: x-small;
-        }
+        display: flex;
     }
 }
 
