@@ -36,10 +36,18 @@ body {
 }
 
 .desktop-nav {
+    z-index: 99;
+    position: fixed;
+    top: 6.8rem;
+    right: 9.6rem;
+    width: 25%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    padding: 2.4rem 3.2rem;
+    border: none;
+    border-radius: 1.6rem;
     background-color: var(--light-blue);
 }
 
@@ -76,6 +84,7 @@ li {
 ul {
     margin-left: 4rem;
 }
+
 h1 {
     text-align: center;
     color: var(--mid-blue);
@@ -106,18 +115,18 @@ h4 {
 }
 
 .body1 {
-    font-size: 2.4rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .body2 {
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .body3 {
     font-weight: 100;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .landing-screen {
@@ -126,10 +135,11 @@ h4 {
     background-image: url(assets/hero-picture.webp);
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    height: 75vh;
+    width: 99vw;
+    height: 80vh;
     display: flex;
     flex-direction: column;
+    margin-bottom: 4rem;
 
     h2 {
         text-align: center;
@@ -143,6 +153,10 @@ h4 {
     a:hover {
         background-color: var(--dark-red);
     }
+
+    p{
+        color: var(--dark-blue);
+    }
 }
 
 .phone-number {
@@ -155,7 +169,7 @@ h4 {
     padding: 1.6rem 4rem;
     font-weight: 500;
     top: 50%;
-    left: 37.5%;
+    left: 40%;
 }
 
 .phone-number:hover {
@@ -167,13 +181,12 @@ h4 {
     position: absolute;
     max-width: 50rem;
     width: 100%;
-    /* margin-inline: 30vw; */
     text-align: center;
     background-color: var(--light-blue);
     border-radius: 50px;
     padding: 1.2rem;
     bottom: -3.4rem;
-    left: 32.5vw;
+    left: 35vw;
 
     p {
         color: var(--dark-blue);
@@ -194,12 +207,14 @@ h4 {
     p,
     a {
         color: var(--mid-blue);
+        text-align: center;
     }
 
     a {
         padding-top: 8px;
         font-size: large;
         text-align: center;
+        margin-top: 4.8rem;
 
         img {
             width: 1vw;
@@ -304,7 +319,9 @@ h4 {
 .values-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5.6rem;
+    gap: 8rem;
+    padding-inline: 6.8rem;
+    padding-bottom: 8rem;
 
     .values-content {
         display: flex;
@@ -338,7 +355,7 @@ iframe {
 
 
 footer {
-    padding-inline: 9.6rem;
+    padding-inline: 16.4rem;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     background-color: var(--light-blue);
@@ -347,7 +364,7 @@ footer {
     align-items: center;
 
     h4 {
-        font-size: 3.2rem;
+        font-size: 2.4rem;
         text-align: center;
     }
 
@@ -355,7 +372,8 @@ footer {
     p {
         color: var(--dark-blue);
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
+        font-weight: 300;
     }
 
     .footer-1 {
@@ -381,6 +399,7 @@ footer {
     img {
         object-fit: contain;
         width: 2.4rem;
+        margin-right: 1.6rem;
     }
 }
 
@@ -468,10 +487,6 @@ footer {
             padding-top: 2rem;
             font-size: small;
         }
-    }
-
-    .landing-screen a {
-        font-size: x-small;
     }
 
     .advices {
@@ -577,10 +592,6 @@ footer {
     .hero {
         max-width: 100%;
         width: 80%;
-        font-size: small;
-    }
-
-    .landing-screen a {
         font-size: small;
     }
 
