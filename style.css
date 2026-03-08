@@ -439,7 +439,7 @@ footer {
         top: 1.2rem;
         right: 2.4rem;
         font-size: 3rem;
-        z-index: 100;
+        z-index: 202;
     }
 
     .modal {
@@ -451,6 +451,7 @@ footer {
         height: 100%;
         top: -100vh;
         left: 0;
+        z-index: 200;
     }
 
     .change-modal {
