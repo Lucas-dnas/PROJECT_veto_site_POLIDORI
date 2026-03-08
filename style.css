@@ -275,7 +275,8 @@ h4 {
         .advices-div {
             display: flex;
             margin-inline: 6.4rem;
-            width: 75vw;
+            max-width: 75vw;
+            width: 100%;
             gap: 2.4rem;
             align-items: center;
             justify-content: space-between;
@@ -524,9 +525,9 @@ footer {
 
         .advices-section {
             display: flex;
-            /* grid-template-columns: repeat(1, 1fr); */
             flex-direction: column;
             gap: 2.4rem;
+            align-items: center;
 
             h4 {
                 font-size: large;
@@ -534,20 +535,18 @@ footer {
             }
 
             ul {
-                padding-left: 4rem;
+                padding-left: 2rem;
                 align-self: start;
             }
 
-            div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+            .advices-div:nth-child(2) {
+                flex-direction: row;
+                ;
             }
 
             .img-alerts-signs,
             .img-not-doing {
-                visibility: hidden;
+                display: none;
             }
         }
 
@@ -599,6 +598,10 @@ footer {
         padding-bottom: 5%;
     }
 
+    ul {
+        padding-left: 1.2rem;
+    }
+
     span {
         font-size: small;
     }
@@ -617,6 +620,10 @@ footer {
     .values-content {
         grid-template-columns: repeat(2, 1fr);
         gap: 3.2rem;
+    }
+
+    .advices-div {
+        width: 100%;
     }
 
     .map {
@@ -648,4 +655,5 @@ footer {
         grid-template-columns: 1fr;
         padding-inline: 5rem;
     }
+
 }
