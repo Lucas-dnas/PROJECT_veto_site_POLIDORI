@@ -322,6 +322,8 @@ h4 {
     align-self: center;
 }
 
+
+/* VALUES SECTION */
 .values {
     width: 100%;
     display: flex;
@@ -402,7 +404,7 @@ footer {
         padding-left: 1.6rem;
 
     }
-    
+
     .footer-2 {
         display: flex;
         flex-direction: column;
@@ -553,6 +555,25 @@ footer {
 
     }
 
+    .values-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8rem;
+        padding-inline: 4rem;
+
+        .values-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            img {
+                width: 100%;
+                overflow: hidden;
+                border-radius: 16px;
+            }
+        }
+    }
+
     iframe {
         max-width: 850px;
         max-height: 400px;
@@ -652,9 +673,8 @@ footer {
         }
     }
 
-    .values-content {
-        grid-template-columns: 1fr;
-        padding-inline: 5rem;
+    .values-grid {
+        padding-inline: 2.4rem;
+        gap: 3.2rem;
     }
-
 }
