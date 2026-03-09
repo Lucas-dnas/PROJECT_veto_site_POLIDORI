@@ -432,6 +432,7 @@ footer {
     }
 
     .mobile-nav {
+        z-index: 99;
         display: flex;
     }
 
@@ -487,7 +488,7 @@ footer {
 
     p,
     li {
-        font-size: x-small;
+        font-size: 1.6rem;
 
     }
 
