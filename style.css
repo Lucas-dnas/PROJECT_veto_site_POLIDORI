@@ -662,6 +662,7 @@ footer {
 
     footer {
         display: flex;
+        padding-inline: 14.6rem;
     }
 }
 
