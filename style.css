@@ -110,6 +110,7 @@ h2 {
 }
 
 h3 {
+    color: var(--dark-blue);
     text-align: left;
     font-size: 2.8rem;
     font-weight: 600;
@@ -117,6 +118,7 @@ h3 {
 }
 
 h4 {
+    color: var(--mid-blue);
     font-size: 2.4rem;
     font-weight: 600;
     margin-bottom: 3.2rem;
@@ -248,7 +250,7 @@ h4 {
 
     .advices-content {
         p {
-            padding-left: 6.4rem;
+            padding-inline: 6.4rem;
         }
     }
 
@@ -312,8 +314,7 @@ h4 {
 }
 
 .history-content {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-inline: 6.4rem;
     align-self: center;
 }
 
