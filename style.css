@@ -6,9 +6,10 @@
     --mid-blue: #327291;
     --dark-blue: #01172F;
     --black: #000;
-    --red: #FF0000;
+    --red: #F00;
     --dark-red: #aa1212;
-    font-family: "Lexend Deca";
+
+    font-family: "Lexend Deca", sans-serif;
 }
 
 * {
@@ -16,7 +17,6 @@
     margin: 0;
     font-size: 62.5%;
 }
-
 
 html {
     margin: 0;
@@ -74,15 +74,10 @@ a:hover {
     color: var(--mid-blue);
 }
 
-.mobile-nav {
-    display: none;
-}
-
 main {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: center;
     padding-inline: 9.6rem;
     padding-bottom: 8rem;
@@ -130,6 +125,10 @@ h4 {
 .body1 {
     font-size: 2rem;
     font-weight: 400;
+
+    @media screen and (width<500px) {
+        font-size: 1.6rem;
+    }
 }
 
 .body2 {
@@ -145,7 +144,7 @@ h4 {
 .landing-screen {
     align-self: center;
     position: relative;
-    background-image: url(assets/veto-img-change-after-mail.webp);
+    background-image: url("assets/veto-img-change-after-mail.webp");
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -163,26 +162,28 @@ h4 {
         text-decoration: none;
     }
 
-    a:hover {
-        background-color: var(--dark-red);
-    }
-
     p {
         color: var(--dark-blue);
     }
 }
 
-.phone-number {
+.phone-parent{
     position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.phone-number {
     background-color: var(--red);
     color: var(--white);
     text-align: center;
-    border-radius: 50px;
+    border-radius: 100px;
     font-size: 4rem;
     padding: 2.4rem 4rem;
     font-weight: 500;
-    top: 50%;
-    left: 37.5%;
 }
 
 .phone-number:hover {
@@ -192,14 +193,17 @@ h4 {
 
 .hero {
     position: absolute;
-    max-width: 50rem;
     width: 100%;
-    text-align: center;
-    background-color: var(--light-blue);
-    border-radius: 50px;
-    padding: 1.2rem;
     bottom: -3.4rem;
-    left: 35vw;
+    display: flex;
+    justify-content: center;
+
+    .hero-content {
+        text-align: center;
+        background-color: var(--light-blue);
+        border-radius: 50px;
+        padding: 1.2rem 6.4rem;
+    }
 
     p {
         color: var(--dark-blue);
@@ -233,10 +237,6 @@ h4 {
             width: 1vw;
         }
     }
-
-    a:hover {
-        color: var(--dark-blue);
-    }
 }
 
 
@@ -247,14 +247,9 @@ h4 {
     gap: 8rem;
 
     .advices-content {
-        h4 {
-            font-size: large;
-        }
-
         p {
             padding-left: 6.4rem;
         }
-
     }
 
     .advices-section {
@@ -429,7 +424,15 @@ iframe {
     display: none;
 }
 
-/* @media tablet*/
+.landing-screen a:hover {
+    background-color: var(--dark-red);
+}
+
+.hero-section a:hover {
+    color: var(--dark-blue);
+}
+
+/* @media tablet */
 @media screen and (width<1025px) {
     .desktop-nav {
         display: none;
@@ -505,13 +508,13 @@ iframe {
         font-size: x-small;
     }
 
-    .hero {
+    /* .hero {
         left: 25%;
-    }
+    } */
 
     .phone-number {
         font-size: 2rem;
-        left: 30%5
+        left: 37.5%;
     }
 
     .history-content {
@@ -525,14 +528,9 @@ iframe {
         width: 100%;
 
         .advices-content {
-            h4 {
-                font-size: large;
-            }
-
             p {
                 padding-left: 3rem;
             }
-
         }
 
         .advices-section {
@@ -592,21 +590,19 @@ iframe {
     }
 
     .footer-desktop {
-        p {
-            font-size: small;
-        }
+        padding-inline: 8rem;
 
-        a {
-            font-size: small;
+        a,
+        p {
+            font-size: 1.2rem;
         }
     }
 }
 
 
 /* @media phone */
-@media screen and (width<770px) {
+@media screen and (width<830px) {
     html {
-        max-width: 768px;
         width: 100%;
     }
 
@@ -638,14 +634,14 @@ iframe {
     }
 
     .phone-number {
-        padding: 0.8rem;
+        padding: 0.8rem 1.6rem;
         font-size: 2rem;
     }
 
-    .hero {
+    /* .hero {
         left: 16%;
         font-size: small;
-    }
+    } */
 
     .values-content {
         grid-template-columns: repeat(2, 1fr);
@@ -695,9 +691,14 @@ iframe {
     }
 
     .hero {
-        /* < REVOIR left > */
         left: 0%;
-        width: 90%;
+        width: 100%;
+        justify-content: center;
+
+        .hero-content {
+            width: fit-content;
+            padding: 0.8rem 2.4rem ;
+        }
     }
 
     .phone-number {
@@ -719,7 +720,7 @@ iframe {
         padding: 4rem 2.4rem;
         display: flex;
         flex-direction: column;
-        gap: 2.4rem ;
+        gap: 2.4rem;
         background-color: var(--light-blue);
         color: var(--dark-blue);
         align-items: center;
@@ -737,7 +738,6 @@ iframe {
         a,
         p {
             color: var(--dark-blue);
-            /* text-decoration: underline; */
             font-size: 1.6rem;
             font-weight: 300;
         }
@@ -748,11 +748,11 @@ iframe {
             gap: 1.2rem;
             text-align: center;
 
-            a{
+            a {
                 text-decoration: underline;
             }
         }
-        
+
         .footer-2 {
             display: flex;
             flex-direction: column;
@@ -760,10 +760,10 @@ iframe {
             padding-right: 1.6rem;
             gap: 1.6rem;
 
-            a{
+            a {
                 text-decoration: underline;
             }
-            
+
             div {
                 display: flex;
                 align-items: center;
