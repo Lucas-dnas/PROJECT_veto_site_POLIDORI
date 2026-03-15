@@ -1,5 +1,12 @@
+
+### FOLDERS NOT USEFULL FOR PROJECT
 .vscode/
-node_modules/
-*.json
-.htmlhintrc
+.node_modules/
+### FOLDERS NOT USEFULL FOR PROJECT
+
+
+### FILES NOT USEFULL FOR PROJECT
+package-lock.json/
+package.json/
 *.mjs
+### FILES NOT USEFULL FOR PROJECT
