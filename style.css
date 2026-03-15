@@ -689,6 +689,9 @@ iframe {
         a {
             text-decoration: underline;
         }
+        a img {
+            width: 1.2rem;
+        }
     }
 
     .hero {
