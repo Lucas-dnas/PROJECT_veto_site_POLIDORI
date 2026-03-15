@@ -169,7 +169,7 @@ h4 {
     }
 }
 
-.phone-parent{
+.phone-parent {
     position: absolute;
     top: 50%;
     left: 0;
@@ -280,6 +280,9 @@ h4 {
 
             .advices-item {
                 flex-direction: column;
+                h4 {
+                    color: var(--dark-blue);
+                }
             }
         }
 
@@ -391,7 +394,10 @@ iframe {
         font-size: 1.6rem;
         font-weight: 300;
     }
-
+    
+    a:hover {
+        color: var(--mid-blue);
+    }
     .footer-1 {
         display: flex;
         flex-direction: column;
@@ -508,10 +514,6 @@ iframe {
     span {
         font-size: x-small;
     }
-
-    /* .hero {
-        left: 25%;
-    } */
 
     .phone-number {
         font-size: 2rem;
@@ -634,6 +636,12 @@ iframe {
         font-size: small;
     }
 
+    .hero-section {
+        a img {
+            width: 1.2rem;
+        }
+    }
+
     .phone-number {
         padding: 0.8rem 1.6rem;
         font-size: 2rem;
@@ -689,6 +697,7 @@ iframe {
         a {
             text-decoration: underline;
         }
+
         a img {
             width: 1.2rem;
         }
@@ -701,7 +710,7 @@ iframe {
 
         .hero-content {
             width: fit-content;
-            padding: 0.8rem 2.4rem ;
+            padding: 0.8rem 2.4rem;
         }
     }
 
