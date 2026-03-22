@@ -335,6 +335,17 @@ h4 {
     padding-bottom: 3rem;
 }
 
+.prices {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+    p {
+        padding-inline: 4rem;
+    }
+}
+
 .values-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
