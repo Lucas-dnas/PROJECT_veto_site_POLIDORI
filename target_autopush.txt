@@ -1,7 +1,1 @@
-autopush_00
-autopush_
-
-autopush_ echo
-autopush_+ 1
-autopush_
-autopush_
+autopush_0autopush_
